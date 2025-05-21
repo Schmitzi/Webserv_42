@@ -19,8 +19,13 @@ To use webserv, you first need to compile it
 ```bash
 make start
 ```
-
 This will clear the objects, recompile the binary and start the server with the default configuration.
+
+Or specifiy a specific config
+
+```bash
+make && ./webserv config/main.conf
+```
 
 Then open a second terminal and enter:
 ```bash
@@ -28,6 +33,12 @@ nc localhost 8080
 ```
 
 This will start the connection to the server.
+
+You can also access the server rom the browser at
+
+```bash
+localhost:8080
+```
 
 After this, you have 3 options to test the server. The vaild requests are GET, POST and DELETE.
 
